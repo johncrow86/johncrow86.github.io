@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bash Commands</title>
+    <link href="resources/css/commandlinesheet.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href=index.html>Home</a></li>
+            <li><a href=sandbox.html>Sandbox</a></li>
+            <li>Res 3</li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Bash Command Line Cheat Sheet</h1>
+
+        <!-- Links to useful outside sources -->
+        <div id="links">
+            <h2>Outside Sources</h2>
+            <p><a href="https://www.codecademy.com/article/command-line-commands" target="_blank">https://www.codecademy.com/article/command-line-commands</a></p>
+            <p><a href="https://www.codecademy.com/learn/learn-the-command-line/modules/learn-the-command-line-navigation/cheatsheet" target="_blank">https://www.codecademy.com/learn/learn-the-command-line/modules/learn-the-command-line-navigation/cheatsheet</a></p>
+        </div>
+
+        <h2>Basics</h2>
+        <!-- Basic commands -->
+        <table id="basics">
+            <thead>
+                <tr>
+                    <th colspan=2>Basic Commands</th>
+                </tr>
+                <tr>
+                    <th scope="col">Command</th>
+                    <th scope="col">Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>pwd</code></td>
+                    <td>Print the Working Directory</td>
+                </tr>
+                <tr>
+                    <td><code>ls</code></td>
+                    <td>Lists all files and directories in the working directory</td>
+                </tr>
+                <tr>
+                    <td><code>ls -alt</code></td>
+                    <td>-a lists hidden<br>-l lists long<br>-t lists by time</td>
+                </tr>
+                <tr>
+                    <td><code>cd &lt;destination directory&gt;</code></td>
+                    <td>Change to the destination Directory<br></td>
+                </tr>
+                <tr>
+                    <td><code>cd ..</code></td>
+                    <td>Change up one Directory level<br></td>
+                </tr>
+                <tr>
+                    <td><code>cd ~</code></td>
+                    <td>Change to the home Directory<br></td>
+                </tr>
+                <tr>
+                    <td><code>mkdir &lt;directory&gt;</code></td>
+                    <td>Create a Directory</td>
+                </tr>
+                <tr>
+                    <td><code>touch &lt;file&gt;</code></td>
+                    <td>Create a File</td>
+                </tr>
+                <tr>
+                    <td><code>clear</code></td>
+                    <td>Clear the terminal</td>
+                </tr>
+                <tr>
+                    <td><kbd>tab</kbd> (button)</td>
+                    <td>Autocomplete the name of a directory or file</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Basic commands part 2 -->
+        <table id="basicsii">
+            <thead>
+                <tr>
+                    <th colspan=2>Basic Commands II</th>
+                </tr>
+                <tr>
+                    <th scope="col">Command</th>
+                    <th scope="col">Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>echo &lt;string/file&gt;</code></td>
+                    <td>Output the string/file</td>
+                </tr>
+                <tr>
+                    <td><code>cat &lt;file&gt;</code></td>
+                    <td>List contents of a file</td>
+                </tr>
+                <tr>
+                    <td><code>cp &lt;source file/dir&gt; &lt;new file/dir&gt;</code></td>
+                    <td>Save a copy of the source as a new file</td>
+                </tr>
+                <tr>
+                    <td><code>cp &lt;source file/dir&gt; &lt;destination dir&gt;</code></td>
+                    <td>Save a copy of the source in the destination</td>
+                </tr>
+                <tr>
+                    <td><code>mv &lt;source file/dir&gt; &lt;new file/dir&gt;</code></td>
+                    <td>Rename the source as a new file</td>
+                </tr>
+                <tr>
+                    <td><code>mv &lt;source file&gt; &lt;destination dir&gt;</code></td>
+                    <td>Move the source to the destination</td>
+                </tr>
+                <tr>
+                    <td><code>rm &lt;source file&gt;</code></td>
+                    <td>Remove the source file</td>
+                </tr>
+                <tr>
+                    <td><code>rm -r &lt;source dir&gt;</code></td>
+                    <td>Remove the source directory</td>
+                </tr>
+                <tr>
+                    <td><kbd>*</kbd></td>
+                    <td>Wildcard to select all files in a directory<br>(*.txt will select all txt)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Extra Commands</h2>
+        <!-- Extra commands -->
+        <table id="basics">
+            <thead>
+                <tr>
+                    <th colspan=2>Extra Commands</th>
+                </tr>
+                <tr>
+                    <th scope="col">Command</th>
+                    <th scope="col">Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>code .</code></td>
+                    <td>Starts VS Code</td>
+                </tr>
+                <tr>
+                    <td><code>node</code> file.js</td>
+                    <td>Run JS Node on file</td>
+                </tr>
+                <th colspan=2><a href="https://git-scm.com/docs">Git Docs</a></th>
+                <tr>
+                    <td><code>git init</code></td>
+                    <td>Initialize a GIT Repository to the working directory</td>
+                </tr>
+                <tr>
+                    <td><code>git status</code></td>
+                    <td>Print status of working directory and staging area</td>
+                </tr>
+                <tr>
+                    <td><code>git add</code> filename</td>
+                    <td>Add file to the staging area</td>
+                </tr>
+                <tr>
+                    <td><code>git diff</code> filename</td>
+                    <td>Print difference between file in working and staging/repo</td>
+                </tr>
+                <tr>
+                    <td><code>git commit -m</code> "message"</td>
+                    <td>Commits changes from staging area<br>Leave a message describing changes made</td>
+                </tr>
+                <tr>
+                    <td><code>git log</code></td>
+                    <td>Print the history of commits</td>
+                </tr>
+                <tr>
+                    <td><code>git show HEAD</code></td>
+                    <td>Print the last commit log and changes</td>
+                </tr>
+                <tr>
+                    <td><code>git checkout HEAD</code> filename</td>
+                    <td>Checkout most recent commit<br>Discards changes in working directory if already checked out</td>
+                </tr>
+                <tr>
+                    <td><code>git reset HEAD</code> filename</td>
+                    <td>Remove file from staging area<br>Does not discard changes</td>
+                </tr>
+                <tr>
+                    <td><code>git reset</code> commit_SHA(first 7)</td>
+                    <td>Sets HEAD to commit with commit_SHA</td>
+                </tr>
+                <tr>
+                    <td><code>git stash</code></td>
+                    <td>Stash working files in a hidden directory<br>Frees up the working directory</td>
+                </tr>
+                <tr>
+                    <td><code>git stash pop</code></td>
+                    <td>Retrieve working files that have been stashed</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>

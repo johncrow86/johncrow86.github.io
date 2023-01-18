@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Commands</title>
+    <link href="resources/css/javascriptsheet.css" rel="stylesheet">
+    <!-- <script>window.alert('Lets learn some JavaScript');</script> -->
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href=index.html>Home</a></li>
+            <li><a href=sandbox.html>Sandbox</a></li>
+            <li>Res 3</li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>JavaScript Cheat Sheet</h1>
+
+        <!-- Links to useful outside sources -->
+        <div id="links">
+            <h2>Outside Sources</h2>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">https://developer.mozilla.org/en-US/docs/Web/JavaScript</a></p>
+        </div>
+
+        <h2>Intro</h2>
+        <!-- Data types -->
+        <table id="datatypes">
+            <thead>
+                <tr>
+                    <th colspan=2>Data Types</th>
+                </tr>
+                <tr>
+                    <th scope="col">Data Type</th>
+                    <th scope="col">About</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>Number</code></td>
+                    <td>Any number including decimals</td>
+                </tr>
+                <tr>
+                    <td><code>String</code></td>
+                    <td>'Text'</td>
+                </tr>
+                <tr>
+                    <td><code>Boolean</code></td>
+                    <td><code>True/False</code></td>
+                </tr>
+                <tr>
+                    <td><code>Null</code></td>
+                    <td>Intentional absense of value<br><code>Null</code></td>
+                </tr>
+                <tr>
+                    <td><code>Undefined</code></td>
+                    <td>Given value does not exist<br><code>Undefined</code></td>
+                </tr>
+                <tr>
+                    <td><code>Symbol</code></td>
+                    <td>Unique identifiers</td>
+                </tr>
+                <tr>
+                    <td><code>Object</code></td>
+                    <td>Collections of related data</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Operators -->
+        <table id="operators">
+            <thead>
+                <tr>
+                    <th colspan=2>Operators</th>
+                </tr>
+                <tr>
+                    <th scope="col">Operator</th>
+                    <th scope="col">About</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>+</code></td>
+                    <td>Adds numbers. Concatenates strings</td>
+                </tr>
+                <tr>
+                    <td><code>-</code></td>
+                    <td>Subtracts numbers</td>
+                </tr>
+                <tr>
+                    <td><code>*</code></td>
+                    <td>Multiplies numbers</td>
+                </tr>
+                <tr>
+                    <td><code>/</code></td>
+                    <td>Divides numbers</td>
+                </tr>
+                <tr>
+                    <td><code>%</code></td>
+                    <td>Modular division</td>
+                </tr>
+                <tr>
+                    <td><code>+=</code></td>
+                    <td>Add the number to the variable and reassign the variable</td>
+                </tr>
+                <tr>
+                    <td><code>-=</code></td>
+                    <td>Subtract the number from the variable and reassign the variable</td>
+                </tr>
+                <tr>
+                    <td><code>*=</code></td>
+                    <td>Multiply the number by the variable and reassign the variable</td>
+                </tr>
+                <tr>
+                    <td><code>/=</code></td>
+                    <td>Divide the number by the variable and reassign the variable</td>
+                </tr>
+                <tr>
+                    <td><code>++</code></td>
+                    <td>Increment the variable by 1</td>
+                </tr>
+                <tr>
+                    <td><code>--</code></td>
+                    <td>Increment the variable by -1</td>
+                </tr>
+                <tr>
+                    <td><code>typeof</code> variable</td>
+                    <td>Return the variable type</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Basic commands -->
+        <table id="basics">
+            <thead>
+                <tr>
+                    <th colspan=2>Basic Commands</th>
+                </tr>
+                <tr>
+                    <th scope="col">Command</th>
+                    <th scope="col">Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>console.log(message)</code></td>
+                    <td>Write the message to the Console</td>
+                </tr>
+                <tr>
+                    <td colspan=2><code>console.log(`Use backticks to interpolate ${varName} into strings`)</code></td>
+                </tr>
+                <tr>
+                    <td><code>// Comment Here</code></td>
+                    <td>Single line comments</td>
+                </tr>
+                <tr>
+                    <td><code>/* Comment Here */</code></td>
+                    <td>Multi line comments</td>
+                </tr>
+                <tr>
+                    <th colspan="2">String Methods</th>
+                </tr>
+                <tr>
+                    <td>String<code>.length</code></td>
+                    <td>Returns the length of the String</td>
+                </tr>
+                <tr>
+                    <td>String<code>.starsWith(var)</code></td>
+                    <td>Returns true if the string starts with var</td>
+                </tr>
+                <tr>
+                    <td>String<code>.toLowerCase()</code></td>
+                    <td>Returns a string in all lower case</td>
+                </tr>
+                <tr>
+                    <td>String<code>.toUpperCase()</code></td>
+                    <td>Returns a string in all upper case</td>
+                </tr>
+                <tr>
+                    <td>String<code>.trim()</code></td>
+                    <td>Returns a string removes leading and trailing whitespace</td>
+                </tr>
+                <tr>
+                    <td>String<code>.split(character)</code></td>
+                    <td>Split the string into an array element at each character<br>Returns array</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Math Methods</th>
+                </tr>
+                <tr>
+                    <td><code>Math.random()</code></td>
+                    <td>Returns a number between 0 inclusive and 1 exclusive</td>
+                </tr>
+                <tr>
+                    <td><code>Math.floor()</code></td>
+                    <td>Rounds a number down</td>
+                </tr>
+                <tr>
+                    <td><code>Math.ceil()</code></td>
+                    <td>Rounds a number up</td>
+                </tr>
+                <tr>
+                    <th colspan="2"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target ="_blank">Array Methods</a></th>
+                </tr>
+                <tr>
+                    <td>Array<code>.length</code></td>
+                    <td>Returns the length of the Array</td>
+                </tr>
+                <tr>
+                    <td>Array<code>.push(item)</code></td>
+                    <td>Add item(s) to the end of an Array<br>Returns length</td>
+                </tr>
+                <tr>
+                    <td>Array<code>.pop()</code></td>
+                    <td>Remove the last item from an Array<br>Returns item</td>
+                </tr>
+                <tr>
+                    <td>Array<code>.shift()</code></td>
+                    <td>Remove the first item from an Array<br>Returns Item</td>
+                </tr>
+                <tr>
+                    <td>Array<code>.unshift(item)</code></td>
+                    <td>Add item(s) to the beginning of an Array<br>Returns length</td>
+                </tr>
+                <tr>
+                    <td>Array<code>.join(character)</code></td>
+                    <td>Concatinate all elements of an array into a string seperated by character<br>Returns string</td>
+                </tr>
+                <tr>
+                    <td>Array<code>.slice(start position, end position)</code></td>
+                    <td>Return a shallow copy of the list</td>
+                </tr>
+                <tr>
+                    <td>Array<code>.indexOf(item)</code></td>
+                    <td>Return the index of item</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Array Iteration</th>
+                </tr>
+                <tr>
+                    <td>Array<code>.forEach(function)</code></td>
+                    <td>Perform the function on each item in the array<br>Returns undefined</td>
+                </tr>
+                <tr>
+                    <td>Array<code>.map(function)</code></td>
+                    <td>Perform the function on each item in the array<br>Returns new array</td>
+                </tr>
+                <tr>
+                    <td>Array<code>.filter(function)</code></td>
+                    <td>Checks function boolean and keep true values<br>Returns new array</td>
+                </tr>
+                <tr>
+                    <td>Array<code>.findIndex(function)</code></td>
+                    <td>Finds the index of first true value<br>Returns index</td>
+                </tr>
+                <tr>
+                    <td>Array<code>.some(function)</code></td>
+                    <td>Returns true if any element meets the functions conditions<br>Returns boolean</td>
+                </tr>
+                <tr>
+                    <td>Array<code>.every(function)</code></td>
+                    <td>Returns true if all elements meet the functions conditions<br>Returns boolean</td>
+                </tr>
+
+                    <th colspan="2">Object Methods</th>
+                </tr>
+                <tr>
+                    <td><code>Object.keys(obj)</code></td>
+                    <td>Returns the objects keys as an array</td>
+                </tr>
+                <tr>
+                    <td><code>Object.entries(obj)</code></td>
+                    <td>Returns the objects key/value pairs as an array</td>
+                </tr>
+                <tr>
+                    <td><code>Object.assign(target, source)</code></td>
+                    <td>Returns target object with target and source properties</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Keywords -->
+        <table id="basics">
+            <thead>
+                <tr>
+                    <th colspan=2>Keywords</th>
+                </tr>
+                <tr>
+                    <th scope="col">Command</th>
+                    <th scope="col">Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>var</code> varName</td>
+                    <td>creates a global variable named varName</td>
+                </tr>
+                <tr>
+                    <td><code>let</code> varName</td>
+                    <td>creates a local variable named varName</td>
+                </tr>
+                <tr>
+                    <td><code>const</code> varName</td>
+                    <td>creates a constant variable named varName</td>
+                </tr>
+                <tr>
+                    <td><code>var</code> varName = []</td>
+                    <td>creates a global array variable named varName</td>
+                </tr>
+                <tr>
+                    <td><code>var</code> varName = {}</td>
+                    <td>creates a global object variable named varName</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Logic -->
+        <h2>Logic</h2>
+        <h3>If statement</h3>
+        <img src="resources/media/js if logic.PNG" alt="If statement">
+        <h3>If Else statement</h3>
+        <img src="resources/media/js if else logic.PNG" alt="If Else statement">
+
+        <!-- Comparison operators -->
+        <table id="comparisonoperators">
+            <thead>
+                <tr>
+                    <th colspan=2>Comparison Operators</th>
+                </tr>
+                <tr>
+                    <th scope="col">Operator</th>
+                    <th scope="col">About</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>&lt;</code></td>
+                    <td>Less than</td>
+                </tr>
+                <tr>
+                    <td><code>&gt;</code></td>
+                    <td>Greater than</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;=</code></td>
+                    <td>Less than or equal to</td>
+                </tr>
+                <tr>
+                    <td><code>&gt;=</code></td>
+                    <td>Greater than or equal to</td>
+                </tr>
+                <tr>
+                    <td><code>==</code></td>
+                    <td>Is equal to (checks value)</td>
+                </tr>
+                <tr>
+                    <td><code>===</code></td>
+                    <td>Is equal to (checks value and data type)</td>
+                </tr>
+                <tr>
+                    <td><code>!==</code></td>
+                    <td>Is not equal to</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Logical operators -->
+        <table id="logicaloperators">
+            <thead>
+                <tr>
+                    <th colspan=2>Logical Operators</th>
+                </tr>
+                <tr>
+                    <th scope="col">Operator</th>
+                    <th scope="col">About</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>&&</code></td>
+                    <td>And</td>
+                </tr>
+                <tr>
+                    <td><code>||</code></td>
+                    <td>Or</td>
+                </tr>
+                <tr>
+                    <td><code>!</code></td>
+                    <td>Not</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Short circuit evaluation</h3>
+        <img src="resources/media/js short circuit eval.PNG" alt="Short circuit evaluation">
+        <h3>Ternary Operator</h3>
+        <img src="resources/media/js ternary op.PNG" alt="Ternary operator">
+        <h3>Switch Statement</h3>
+        <img src="resources/media/js switch statement.PNG" alt="Switch statement">
+        <h3>Functions</h3>
+        <img src="resources/media/js functions.PNG" alt="Functions">
+        <h3>Loops</h3>
+        <img src="resources/media/js loops.PNG" alt="Loops">
+        <br>
+        <img src="resources/media/js for each loop.PNG" alt="For each loop">
+        <h3>Objects</h3>
+        <img src="resources/media/js objects1.PNG" alt="Objects">
+        <h3>Object Factory Function</h3>
+        <img src="resources/media/js function factory.PNG" alt="Function factory">
+    </main>
+</body>
+
+</html>

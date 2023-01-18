@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements</title>
+    <link href="resources/css/htmlsheet.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href=index.html>Home</a></li>
+            <li><a href=sandbox.html>Sandbox</a></li>
+            <li>Res 3</li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>HTML Cheat Sheet</h1>
+
+        <!-- Links to useful outside sources -->
+        <div id="links">
+            <h2>Outside Sources</h2>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">https://developer.mozilla.org/en-US/docs/Web/HTML</a></p>
+            <p><a href="https://www.w3schools.com/html" target="_blank">https://www.w3schools.com/html</a></p>
+        </div>
+
+        <!-- Initial setup code -->
+        <section id="setup">
+            <h2>Setup</h2>
+            <h3>Doctype</h3>
+            <p>All HTML documents must start with a <code>&lt;!DOCTYPE&gt;</code> declaration.<br>
+            The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.</p>
+            
+            <h3>HTML</h3>
+            <p>The <code>&lt;html&gt;</code> tag represents the root of an HTML document.<br>
+            The <code>&lt;html&gt;</code> tag is the container for all other HTML elements (except for the <code>!DOCTYPE</code> tag).</p>
+            
+            <h3>Body</h3>     
+            <p>The <code>&lt;body&gt;</code> tag defines the document's body.<br>
+            The <code>&lt;body&gt;</code> element contains all the contents of an HTML document.<br>
+            Note: There can only be one <code>&lt;body&gt;</code> element in an HTML document.</p>
+
+            <h3>Head</h3>
+            <p>The <code>&lt;head&gt;</code> element is a container for metadata (data about data) and is placed between the <code>&lt;html&gt;</code> tag and the <code>&lt;body&gt;</code> tag.<br>
+            Metadata is data about the HTML document. Metadata is not displayed.<br>
+            Metadata typically define the document title, character set, styles, scripts, and other meta information.<br>
+            The <code>&lt;title&gt;</code> element is the tab title.</p>
+
+            <img src="resources/media/html boiler plate.PNG" alt="Basic HTML boiler plate">
+            <p>Basic HTML boiler plate with the <code>&lt;!DOCTYPE&gt;</code> declaration and <code>&lt;html&gt;</code>, <code>&lt;body&gt;</code> and <code>&lt;head&gt;</code> tags.</p>
+        </section>
+
+        <!-- Basic elements -->
+        <section id="basics">
+            <h2>Basic Elements</h2>
+            <h3>Links</h3>
+            <p>The <code>&lt;a&gt;</code> element defines a hyperlink.<br>
+            The <code>href</code> attribute indicates the links destination.<br>
+            Set <code>target="_blank"</code> to open in a new window.</p>
+            
+            <h3>Headings</h3>
+            <ol>
+                <li><h1>&lt;h1&gt;</h1></li>
+                <li><h2>&lt;h2&gt;</h2></li>
+                <li><h3>&lt;h3&gt;</h3></li>
+                <li><h4>&lt;h4&gt;</h4></li>
+                <li><h5>&lt;h5&gt;</h5></li>
+                <li><h6>&lt;h6&gt;</h6></li>
+            </ol>
+            
+            <h3>Divs</h3>
+            <p>The <code>&lt;div&gt;</code> element defines a division or a section in an HTML document.<br>
+            It is the basic container for HTML elements and can be easily styled by using the class or id attribute.</p>
+
+            <h3>Class & ID</h3>
+            <p><code>Class</code> & <code>ID</code> are attributes added to tags to categorize and identify them.<br>
+            <code>Class</code> is more broad and can be shared by multiple elements.<br>
+            <code>ID</code> is specific and should be used to uniquely identify one element.</p>
+            <h3>Paragraphs & Spans</h3>
+            <p>The <code>&lt;p&gt;</code> element will display a block of text.<br>
+            The <code>&lt;span&gt;</code> element will display inline text.</p>
+
+            <h3>Comments</h3>
+            <p><code>&lt;!--</code> Comment Here <code>--&gt;</code></p>
+        </section>
+
+        <!-- Basic elements part 2 -->
+        <section id="basicsii">
+            <h2>Basic Elements II</h2>
+            <h3>Styling</h3>
+            <p>The <code>&lt;em&gt;</code> element will <em>emphasize</em>.<br>
+            The <code>&lt;strong&gt;</code> element will <strong>bold</strong>.</p>
+
+            <h3>Line Breaks</h3>
+            <p>The <code>&lt;br&gt;</code> tag will create a new line. No closing tag.</p>
+            
+            <h3>Lists</h3>
+            <p>Lists can be unordered <code>&lt;ul&gt;</code> or ordered <code>&lt;ol&gt;</code>.<br>
+            The <code>&lt;li&gt;</code> element defines an item.</p>
+            <ul>
+                <li>Unordered 1</li>
+                <li>Unordered 2</li>
+                <li>Unordered 3</li>
+            </ul>
+            <ol>
+                <li>Ordered 1</li>
+                <li>Ordered 2</li>
+                <li>Ordered 3</li>
+            </ol>
+
+            <h3>Images</h3>
+            <p>The <code>&lt;img&gt;</code> element defines an image. No closing tag.<br>
+            The <code>src</code> attribute indicates the images location.<br>
+            The <code>alt</code> attribute displays text when the image fails to load.</p>
+
+            <h3>Videos</h3>
+            <p>The <code>&lt;video&gt;</code> element defines a video.<br>
+            The <code>src</code> attribute indicates the videos location.<br>
+            The <code>controls</code> attribute displays play/pause.</p>
+        </section>
+
+        <!-- Advanced elements -->
+        <section id="advanced">
+            <h2>Advanced Elements</h2>
+            <h3>Tables</h3>
+            <p>The <code>&lt;table&gt;</code> element creates a table.<br>
+            <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> define the table head and table body.<br>
+            <code>&lt;tr&gt;</code> creates a table row.<br>
+            <code>&lt;th&gt;</code> defines a table heading.<br>
+            <code>scope</code> attribute can be col or row for the column or row headings.<br>
+            <code>&lt;td&gt;</code> defines table data.<br>
+            <code>colspan</code> and <code>rowspan</code> attributes can extend the data cell.</p>
+            
+            <h3>Forms</h3>
+            <p>The <code>&lt;form&gt;</code> element creates a form.<br>
+            <code>action</code> attribute determines where the form is sent.<br>
+            <code>method</code> attribute determines the type of HTTP request.<br><br>
+            The <code>&lt;input&gt;</code> tag accepts user data input.<br>
+            <code>type</code> attribute defines the input type allowed.<br>
+            <code>name</code> attribute is the variable name used to submit the input.<br>
+            <code>required</code> makes the input required.<br>
+            <code>value</code> attribute is the value of the input.<br><br>
+            The <code>&lt;label&gt;</code> element is used to label the input field.<br>
+            <code>for</code> attribute should match the <code>id</code> attribute of <code>&lt;input&gt;</code>.<br>
+            Use <code>&lt;input&gt;</code> with <code>type="submit"</code> and <code>value="Submit"</code> to submit the form.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>

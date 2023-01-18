@@ -1,0 +1,47 @@
+body {
+    background-color: lightgray;
+}
+
+nav {
+    background-color: gray;
+    border: 3px solid black;
+    margin: 0;
+    text-align: center;
+    /* Position fixed keeps nav bar from moving but shrinks the width */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* Extend width back to 100% after fixing position */
+    width: 100%;
+    /* Z-index keeps nav bar on top */
+    z-index: 10;
+}
+
+nav li {
+    /* Inline-block removes bullet point from the list item */
+    display: inline-block;
+    width: 80px;
+}
+
+nav li a {
+    /* This styles menu links (inside the site) to appear different than normal links */
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+main {
+    text-align: center;
+    /* Position and Top to offset main from fixed nav bar */
+    position: relative;
+    top: 85px;
+}
+
+ul, ol {
+    text-align: center;
+    /* List style position centers the bullet points and numbers for lists */
+    list-style-position: inside;
+}
+
+li h1, li h2, li h3, li h4, li h5, li h6 {
+    display: inline;
+}

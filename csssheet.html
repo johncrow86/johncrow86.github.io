@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Declarations</title>
+    <link href="resources/css/csssheet.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href=index.html>Home</a></li>
+            <li><a href=sandbox.html>Sandbox</a></li>
+            <li>Res 3</li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>CSS Cheat Sheet</h1>
+
+        <!-- Links to useful outside sources -->
+        <div id="links">
+            <h2>Outside Sources</h2>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS</a></p>
+            <p><a href="https://www.w3schools.com/css" target="_blank">https://www.w3schools.com/css</a></p>
+        </div>
+
+        <h2>Intro</h2>
+        <!-- Styling information -->
+        <div>
+            <h3>Styling can be done inline.</h3>
+            <img src="resources/media/css inline.PNG" alt="CSS Inline Styling">
+            <h3>Styling can be done as an internal stylesheet.</h3>
+            <img src="resources/media/css internal.PNG" alt="CSS Internal Stylesheet">
+            <h3>Styling can be done on an external stylesheet.</h3>
+            <img src="resources/media/css selectors.PNG" alt="CSS Selectors">
+        </div>
+
+        <!-- Basic declarations -->
+        <table id="basics">
+            <thead>
+                <tr>
+                    <th colspan=2>Basic Declarations</th>
+                </tr>
+                <tr>
+                    <th scope="col">Property</th>
+                    <th scope="col">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>font-family</code></td>
+                    <td>'Times New Roman'</td>
+                </tr>
+                <tr>
+                    <td><code>font-size</code></td>
+                    <td>18px</td>
+                </tr>
+                <tr>
+                    <td><code>font-weight</code></td>
+                    <td>0-1000 or <code>normal</code>(400), <code>bold</code>(700)</td>
+                </tr>
+                <tr>
+                    <td><code>text-align</code></td>
+                    <td><code>left, center, right, justify</code></td>
+                </tr>
+                <tr>
+                    <td><code>color</code></td>
+                    <td><code>red, #ff0000, rgb(255,0,0), hsl(360, 0%, 0%)</code></td>
+                </tr>
+                <tr>
+                    <td><code>background-color</code></td>
+                    <td><code>red, #ff0000, rgb(255,0,0), hsl(360, 0%, 0%)</code></td>
+                </tr>
+                <tr>
+                    <td><code>opacity</code></td>
+                    <td>0.0 - 1.0</td>
+                </tr>
+                <tr>
+                    <td><code>background-image</code></td>
+                    <td><code>url('Source')</code></td>
+                </tr>
+                <tr>
+                    <td colspan="2">adding <code>!important</code> overrides all other declarations</td>
+                </tr>
+                <tr>
+                    <td colspan="2"> </td>
+                </tr>
+                <tr>
+                    <td><code>cursor</code></td>
+                    <td><code>pointer</code></td>
+                </tr>
+                <tr>
+                    <td><code>text-decoration</code></td>
+                    <td><code>underline</code></td>
+                </tr><tr>
+                    <td><code>text-transform</code></td>
+                    <td><code>uppercase</code></td>
+                </tr>
+                <tr>
+                    <td><code>transition</code></td>
+                    <td>create a transition effect (useful for hovering)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Box model declarations-->
+        <div id="boxmodel">
+            <h2>The Box Model</h2>
+            <img src="resources/media/the box model.PNG" alt="The CSS Box Model">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan=2>Box Model Declarations</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Property</th>
+                        <th scope="col">Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>width</code></td>
+                        <td>10px</td>
+                    </tr>
+                    <tr>
+                        <td><code>height</code></td>
+                        <td>12px</td>
+                    </tr>
+                    <tr>
+                        <td><code>padding</code></td>
+                        <td>20px<br>4 digits (t, r, b, l)<br>3 digits (t, rl, b)<br>2 digits (tb, rl)</td>
+                    </tr>
+                    <tr>
+                        <td><code>padding-(direction)</code></td>
+                        <td><code>top, right, bottom, left</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>border</code></td>
+                        <td>1px solid black<br>width (3px, <code>thin, medium, thick</code>)<br>style (<code>none, dotted, solid</code>)<br>color</td>
+                    </tr>
+                    <tr>
+                        <td><code>margin</code></td>
+                        <td>24px<br>4 digits (t, r, b, l)<br>3 digits (t, rl, b)<br>2 digits (tb, rl)<br>0 auto (center content)</td>
+                    </tr>
+                    <tr>
+                        <td><code>margin-(direction)</code></td>
+                        <td><code>top, right, bottom, left</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>border-radius</code></td>
+                        <td>rounds border corners<br>set length=height and border-radius=50% for circle</td>
+                    </tr>
+                    <tr>
+                        <td><code>overflow</code></td>
+                        <td><code>hidden, scroll, visible</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>box-sizing</code></td>
+                        <td><code>content-box default, border-box</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Display Options</h2>
+        <!-- HTML flow declarations-->
+        <table id="flow">
+            <thead>
+                <tr>
+                    <th colspan=2>Flow Declarations</th>
+                </tr>
+                <tr>
+                    <th scope="col">Property</th>
+                    <th scope="col">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>position</code></td>
+                    <td><code>static, relative, absolute, fixed, sticky</code></td>
+                </tr>
+                <tr>
+                    <td><code>display</code></td>
+                    <td><code>block, inline, inline-block,<br>flex, inline-flex<br>grid, inline-grid</code></td>
+                </tr>
+                <tr>
+                    <td><code>z-index</code></td>
+                    <td>integer values<br>position cannot be <code>static</code></td>
+                </tr>
+                <tr>
+                    <td><code>float</code></td>
+                    <td><code>left, right</code></td>
+                </tr>
+                <tr>
+                    <td><code>clear</code></td>
+                    <td><code>left, right, both, none</code></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Flexbox -->
+        <table id="flexbox">
+            <thead>
+                <tr>
+                    <th colspan=2>Flexbox Model Declarations</th>
+                </tr>
+                <tr>
+                    <th scope="col">Property</th>
+                    <th scope="col">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>justify-content</code></td>
+                    <td>space items on main axis<br><code>flex-start, flex-end, center, space-around, space-between</code></td>
+                </tr>
+                <tr>
+                    <td><code>align-items</code></td>
+                    <td>space items on cross axis<br><code>flex-start, flex-end, center, baseline, stretch</code></td>
+                </tr>
+                <tr>
+                    <td><code>flex-grow</code></td>
+                    <td>integer (default 0)</td>
+                </tr>                <tr>
+                    <td><code>flex-shrink</code></td>
+                    <td>integer (default 1)</td>
+                </tr>
+                <tr>
+                    <td><code>flex-basis</code></td>
+                    <td>sets initial width</td>
+                </tr>
+                <tr>
+                    <td><code>flex</code></td>
+                    <td>1 2 60px<br>3 digits (<code>flex-grow, flex-shrink, flex-basis</code>)<br>2 digits (<code>flex-grow, flex-basis</code>)</td>
+                </tr>
+                <tr>
+                    <td><code>flex-wrap</code></td>
+                    <td><code>wrap, wrap-reverse, nowrap</code></td>
+                </tr>
+                <tr>
+                    <td><code>align-content</code></td>
+                    <td>space row on cross axis<br><code>flex-start, flex-end, center, space-between, space-around, stretch</code></td>
+                </tr>
+                <tr>
+                    <td><code>flex-direction</code></td>
+                    <td>specify axis<br><code>row, row-reverse, column, column-reverse</code></td>
+                </tr>
+                <tr>
+                    <td><code>flex-flow</code></td>
+                    <td>shorthand for direction and wrap<br><code>column wrap</code></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- CSS Grid -->
+        <table id="cssgrid">
+            <thead>
+                <tr>
+                    <th colspan=2>CSS Grid Model Declarations</th>
+                </tr>
+                <tr>
+                    <th scope="col">Property</th>
+                    <th scope="col">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>grid-template-columns</code></td>
+                    <td>30px 50% 20px</td>
+                </tr>
+                <tr>
+                    <td><code>grid-template-rows</code></td>
+                    <td>40px 50%</td>
+                </tr>
+                <tr>
+                    <td><code>grid-template</code></td>
+                    <td>shorthand for rows/columns<br>40px 50% / 30px 50% 20px</td>
+                </tr>
+                <tr>
+                    <td colspan="2">use <code>fr</code> instead of <code>px</code> to measure fractions of the screen</td>
+                </tr>
+                <tr>
+                    <td colspan="2">use <code>repeat(#, size)</code> to create equal size rows/columns</td>
+                </tr>
+                <tr>
+                    <td colspan="2">use <code>minmax(min, max)</code> to specify row/column min/max size</td>
+                </tr>
+                <tr>
+                    <td><code>column-gap</code></td>
+                    <td>20px</td>
+                </tr>
+                <tr>
+                    <td><code>row-gap</code></td>
+                    <td>10px</td>
+                </tr>
+                <tr>
+                    <td><code>gap</code></td>
+                    <td>shorthand for rows/columns gap<br>10px 20px</td>
+                </tr>
+                <tr>
+                    <td><code>grid-row-start</code></td>
+                    <td>row#</td>
+                </tr>
+                <tr>
+                    <td><code>grid-row-end</code></td>
+                    <td>row# + 1</td>
+                </tr>
+                <tr>
+                    <td><code>grid-row</code></td>
+                    <td>row# / row# +1 or row# / span #rows</td>
+                </tr>
+                <tr>
+                    <td><code>grid-column-start</code></td>
+                    <td>row#</td>
+                </tr>
+                <tr>
+                    <td><code>grid-column-end</code></td>
+                    <td>row# + 1</td>
+                </tr>
+                <tr>
+                    <td><code>grid-column</code></td>
+                    <td>row# / row# +1 or row# / span #rows</td>
+                </tr>
+                <tr>
+                    <td><code>grid-area</code></td>
+                    <td>shorthand for grid-row/grid-column<br>row start / column start / row end/ column end</td>
+                </tr>
+                <tr>
+                    <td><code>grid-template-areas</code></td>
+                    <td>"(row 1 col 1 class) (row 1 col 2 class)" "(row 2 col 1 class) (row 2 col 2 class)"</td>
+                </tr>
+                <tr>
+                    <td><code>justify-items</code></td>
+                    <td>set on container. position item along x-axis<br><code>start, end, center, stretch</code>></td>
+                </tr>
+                <tr>
+                    <td><code>justify-content</code></td>
+                    <td>set on container. position container along x-axis<br><code>start, end, center, stretch, space-around, space-between, space-evenly</code>></td>
+                </tr>
+                <tr>
+                    <td><code>align-items</code></td>
+                    <td>set on container. position item along y-axis<br><code>start, end, center, stretch</code>></td>
+                </tr>
+                <tr>
+                    <td><code>align-content</code></td>
+                    <td>set on container. position container along y-axis<br><code>start, end, center, stretch</code>></td>
+                </tr>
+                <tr>
+                    <td><code>justify-self</code></td>
+                    <td>set on item. position self along x-axis<br><code>start, end, center, stretch</code>></td>
+                </tr>
+                <tr>
+                    <td><code>align-self</code></td>
+                    <td>set on item. position self along y-axis<br><code>start, end, center, stretch</code>></td>
+                </tr>
+                <tr>
+                    <td><code>grid-auto-rows</code></td>
+                    <td>automatically create new rows of set width</td>
+                </tr>
+                <tr>
+                    <td><code>grid-auto-columns</code></td>
+                    <td>automatically create new columns of set width</td>
+                </tr>
+                <tr>
+                    <td><code>grid-auto-flow</code></td>
+                    <td>specifies where to fill new elements<br><code>row, column, dense</code></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>Scaling Background Images</h2>
+        <img src="resources/media/scaling background images.PNG" alt="CSS for scaling background images">
+    </main>
+</body>
+
+</html>
