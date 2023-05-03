@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Commands</title>
+    <link href="resources/css/sql.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href=index.html>Home</a></li>
+            <li><a href=sandbox.html>Sandbox</a></li>
+            <li>Res 3</li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Bash Command Line Cheat Sheet</h1>
+
+        <!-- Links to useful outside sources -->
+        <div id="links">
+            <h2>Outside Sources</h2>
+            <p><a href="https://www.w3schools.com/sql/" target="_blank">https://www.w3schools.com/sql/</a></p>
+            <p><a href="https://www.codecademy.com/resources/docs/sql/commands" target="_blank">https://www.codecademy.com/resources/docs/sql/commands</a></p>
+            <p><a href="https://sqlzoo.net/wiki/SQL_Tutorial" target="_blank">https://sqlzoo.net/wiki/SQL_Tutorial</a></p>
+        </div>
+
+        <h2>CRUD in SQL</h2>
+        <!-- CRUD -->
+        <table id="CRUD">
+            <thead>
+                <tr>
+                    <th scope="col">Command</th>
+                    <th scope="col">Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan=2>Create</th>
+                </tr>
+                <tr>
+                    <td>Create Table</td>
+                    <td><code>CREATE TABLE</code> table_name (column_name data_type *constraint*);</td>
+                </tr>
+                <tr>
+                    <td>Create Rows</td>
+                    <td><code>INSERT INTO</code> table_name (column_name)<br><code>VALUES</code> (column_values);</td>
+                </tr>
+                <tr>
+                    <th colspan=2>Read</th>
+                </tr>
+                <tr>
+                    <td>Read All</td>
+                    <td><code>SELECT * FROM</code> table_name;</td>
+                </tr>
+                <tr>
+                    <td>Read</td>
+                    <td><code>SELECT</code> column_name<br><code>FROM</code> table_name<br><code>WHERE</code> column_name = value;</td>
+                </tr>
+                <tr>
+                    <th colspan=2>Update</th>
+                </tr>
+                <tr>
+                    <td>Add Column</td>
+                    <td><code>ALTER TABLE</code> table_name<br><code>ADD COLUMN</code> column_name data_type;</td>
+                </tr>
+                <tr>
+                    <td>Update Rows</td>
+                    <td><code>UPDATE</code> table_name<br><code>SET</code> column_name = value<br><code>WHERE</code> column_name = value;</td>
+                </tr>
+                <tr>
+                    <th colspan=2>Delete</th>
+                </tr>
+                <tr>
+                    <td>Delete Rows</td>
+                    <td><code>DELETE FROM</code> table_name<br><code>WHERE</code> column_name = value;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Queries</h2>
+        <!-- queries -->
+        <table id="queries">
+            <thead>
+                <tr>
+                    <th colspan=2>Query Keywords</th>
+                </tr>
+                <tr>
+                    <th scope="col">Command</th>
+                    <th scope="col">Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rename Column</td>
+                    <td><code>SELECT</code> column_name <code>AS</code> new_name;</td>
+                </tr>
+                <tr>
+                    <td>No repeat values</td>
+                    <td><code>SELECT DISTINCT</code> column_name;</td>
+                </tr>
+                <tr>
+                    <td>Match One</td>
+                    <td><code>SELECT</code> column_name <code>FROM</code> table_name<br><code>WHERE</code> column_name <code>LIKE</code> 'Se_en';</td>
+                </tr>
+                <tr>
+                    <td>Match Many</td>
+                    <td><code>SELECT</code> column_name <code>FROM</code> table_name<br><code>WHERE</code> column_name <code>LIKE</code> 'Se&';</td>
+                </tr>
+                <tr>
+                    <td>Match Null</td>
+                    <td><code>SELECT</code> column_name <code>FROM</code> table_name<br><code>WHERE</code> column_name <code>IS (NOT) NULL</code>;</td>
+                </tr>
+                <tr>
+                    <td>Match Between</td>
+                    <td><code>SELECT</code> column_name <code>FROM</code> table_name<br><code>WHERE</code> column_name <code>BETWEEN</code> value <code>AND</code> value;</td>
+                </tr>
+                <tr>
+                    <td><code>ORDER BY</code></td>
+                    <td><code>SELECT</code> column_name <code>FROM</code> table_name<br><code>ORDER BY</code> column_name <code>ASC/DESC</code>;</td>
+                </tr>
+                <tr>
+                    <td><code>LIMIT</code></td>
+                    <td><code>SELECT</code> column_name <code>FROM</code> table_name<br><code>LIMIT</code> 5;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Aggregates</h2>
+        <!-- queries -->
+        <table id="aggregates">
+            <thead>
+                <tr>
+                    <th colspan=2>Aggregates</th>
+                </tr>
+                <tr>
+                    <th scope="col">Command</th>
+                    <th scope="col">Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>SELECT COUNT</code>(column)</td>
+                    <td>Count the number of rows</td>
+                </tr>
+                <tr>
+                    <td><code>SELECT SUM</code>(column)</td>
+                    <td>Return the sum</td>
+                </tr>
+                <tr>
+                    <td><code>SELECT MAX/MIN</code>(column)</td>
+                    <td>Return max/min of column</td>
+                </tr>
+                <tr>
+                    <td><code>SELECT AVG</code>(column)</td>
+                    <td>Return the average</td>
+                </tr>
+                <tr>
+                    <td><code>SELECT ROUND</code>(column)</td>
+                    <td>Sum the column</td>
+                </tr>
+                <tr>
+                    <td><code>GROUP BY</code></td>
+                    <td>Combine rows of aggregate functions</td>
+                </tr>
+                <tr>
+                    <td><code>HAVING</code>(column)</td>
+                    <td>Filter results of aggregate functions</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>
